@@ -11,20 +11,20 @@ import flask
 
 app = Flask(__name__)
 
-#def generateSummary(text):
+def generateSummary(text):
 
-'''
-text: str # The string body that you want to summarize
-ratio: float # The ratio of sentences that you want for the final summary
-min_length: int # Parameter to specify to remove sentences that are less than 40 characters
-max_length: int # Parameter to specify to remove sentences greater than the max length,
-num_sentences: Number of sentences to use. Overrides ratio if supplied.
-'''
+    '''
+    text: str # The string body that you want to summarize
+    ratio: float # The ratio of sentences that you want for the final summary
+    min_length: int # Parameter to specify to remove sentences that are less than 40 characters
+    max_length: int # Parameter to specify to remove sentences greater than the max length,
+    num_sentences: Number of sentences to use. Overrides ratio if supplied.
+    '''
 
-'''    model = Summarizer()
+    model = Summarizer()
     result = model(text)
     summary = "".join(result)
-    return summary'''
+    return summary
 
 def load():
     print('* LOADED')
@@ -36,9 +36,9 @@ def home():
 @app.route('/generate', methods=['GET', 'POST'])
 def generate():
     #global response
-    #text = request.args['text']
-    #summary = generateSummary(text=text)
-    response = {'result' : 'world'}
+    text = request.args['text']
+    summary = generateSummary(text=text)
+    response = {'result' : str(summary)}
     return jsonify(response)
 
 
