@@ -56,7 +56,6 @@ termcolor==1.1.0
 thinc==7.4.5
 threadpoolctl==2.1.0
 tokenizers==0.9.4
-torch==1.7.1
 tqdm==4.55.1
 transformers==4.1.1
 typing-extensions==3.7.4.3
