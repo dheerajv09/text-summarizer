@@ -21,8 +21,7 @@ idna==2.10
 itsdangerous==1.1.0
 Jinja2==2.11.2
 joblib==1.0.0
-Keras==2.4.3
-Keras-Preprocessing==1.1.2
+
 Markdown==3.3.3
 MarkupSafe==1.1.1
 murmurhash==1.0.5
@@ -48,10 +47,7 @@ scipy==1.5.4
 six==1.15.0
 spacy==2.3.5
 srsly==1.0.5
-tensorboard==2.4.0
-tensorboard-plugin-wit==1.7.0
-tensorflow==2.4.0
-tensorflow-estimator==2.4.0
+
 termcolor==1.1.0
 thinc==7.4.5
 threadpoolctl==2.1.0
